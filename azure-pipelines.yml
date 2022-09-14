@@ -11,20 +11,14 @@ pool:
   vmimage: ubuntu- 20.04.4
 strategy:
   matrix:
-    Python27:
-      python.version: '2.7'
-    Python35:
-      python.version: '3.5'
-    Python36:
-      python.version: '3.6'
-    Python37:
-      python.version: '3.7'
+    Python38:
+      python.version: '3.8.10'
 
 steps:
 - task: UsePythonVersion@0
   inputs:
-    versionSpec: '3.5'
-  displayName: 'x64'
+    versionSpec: '3.8.10'
+  displayName: 'Install prerequisites'
 
 - script: |
     python -m pip install --upgrade pip
