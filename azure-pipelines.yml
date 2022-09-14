@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-20.04.4'
+  name: Default
 strategy:
   matrix:
     Python27:
