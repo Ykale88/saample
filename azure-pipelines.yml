@@ -8,6 +8,7 @@ trigger:
 
 pool:
   name: Default
+  vmimage: ubuntu- 20.04.4
 strategy:
   matrix:
     Python27:
